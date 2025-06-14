@@ -12,6 +12,9 @@ app.register_blueprint(auth_bp)
 def index():
     return {'message': 'API de Work.it funcionando'}
 
-if __name__ == '__main__':
+'''if __name__ == '__main__':
     print("🔌 Servidor Flask ejecutándose en http://localhost:3001")
-    app.run(port=3001, debug=True)
+    app.run(port=3001, debug=True)'''
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=3001)
+
